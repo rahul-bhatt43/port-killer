@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Compiled files
+out/
+dist/
+
+# Packaging
+*.vsix
+
+# VS Code Metadata
+.vscode/
+.vscode-test/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

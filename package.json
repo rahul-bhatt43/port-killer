@@ -1,0 +1,51 @@
+{
+  "name": "port-killer-rahul",
+  "displayName": "All Port Killer",
+  "description": "Kill processes running on any port — right from the VS Code status bar",
+  "version": "1.0.0",
+  "publisher": "rahul-bhatt43",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahul-bhatt43/port-killer"
+  },
+  "keywords": [
+    "port",
+    "kill",
+    "process",
+    "netstat",
+    "lsof"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Testing",
+    "Other"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "portKiller.killPort",
+        "title": "Port Killer: Kill a Port"
+      },
+      {
+        "command": "portKiller.checkPort",
+        "title": "Port Killer: Check Port Status"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.31.1"
+  }
+}

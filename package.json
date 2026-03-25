@@ -3,6 +3,7 @@
   "displayName": "All Port Killer",
   "description": "Kill processes running on any port — right from the VS Code status bar",
   "version": "1.0.0",
+  "license": "MIT",
   "publisher": "rahul-bhatt43",
   "icon": "icon.png",
   "repository": {
